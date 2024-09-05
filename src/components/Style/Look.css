@@ -1,0 +1,65 @@
+/* Ensure the image container is responsive */
+/* Ensure the image container is responsive */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust height to fit content or set a fixed height if needed */
+    overflow: hidden;
+  }
+  
+  /* Make sure images scale with their container */
+  .image-container img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 500px; /* Optional: Set a maximum height */
+    object-fit: cover; /* Ensures images cover the container */
+  }
+  
+  /* Style for annotations */
+  .annotation {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  
+  /* Style for the video container */
+  .video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Navigation styling */
+  .media-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Responsive annotations */
+  .annotation {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Add media queries for better responsiveness on smaller screens */
+  @media (max-width: 768px) {
+    .annotation {
+      font-size: 12px;
+      padding: 3px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .annotation {
+      font-size: 10px;
+      padding: 2px;
+    }
+  }
+  
